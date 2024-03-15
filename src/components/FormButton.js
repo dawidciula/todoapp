@@ -7,7 +7,7 @@ function FormButton({ value, inputValue, onClick })
             <input
                 type="button"
                 value={value}
-                onClick={onClick}w
+                onClick={onClick}
             />
         </div>
     )
