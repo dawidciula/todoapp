@@ -1,3 +1,5 @@
+import React from "react"
+
 function DisplayNote({ noteContent })
 {
     return <h6>{noteContent}</h6>

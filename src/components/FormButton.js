@@ -1,16 +1,23 @@
-function FormButton({ value, inputValue, onClick })
-{
+import { Button } from "@material-tailwind/react";
+import React from "react";
 
-    console.log(inputValue)
-    return (
-        <div>
-            <input
-                type="button"
-                value={value}
-                onClick={onClick}
-            />
-        </div>
-    )
+function FormButton({ value, inputValue, onClick }) {
+  console.log(inputValue);
+  return (
+    <div>
+      <Button
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4"
+        size="lg"
+        type="button"
+        value={value}
+        onClick={onClick}
+        children={undefined}
+        placeholder={undefined}
+      >
+        {value}
+      </Button>
+    </div>
+  );
 }
 
-export default FormButton
+export default FormButton;
